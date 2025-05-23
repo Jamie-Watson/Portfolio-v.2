@@ -1,80 +1,213 @@
 import "../assets/css/main.css";
 import Navbar from "../components/Navbar";
+import CardText from "../components/CardText";
 function Home() {
   return (
     <>
-      <Navbar />
+      <div className="grid-background">
+        <Navbar />
 
-      <div id="home" className="container-my-5 py-5 medium-gray">
-        <div className="row py-5 justify-content-center medium-gray">
-          <div className="col-sm-6 justify-content-center medium-gray pt-5">
-            <div className="text-center">
-              <img
-                src="/assets/images/snoopy-computer.jpg"
-                className="img-fluid rounded-circle"
-                alt="Snoopy at computer"
-              />
+        <div
+          id="home"
+          className="container-my-5 py-5 no-caret light-background"
+        >
+          <div className="row py-5 justify-content-center">
+            <div className="col-sm-6 justify-content-center pt-5">
+              <div className="text-center">
+                <img
+                  src="/assets/images/snoopy-computer.jpg"
+                  className="img-fluid rounded-circle"
+                  alt="Snoopy at computer"
+                />
+              </div>
             </div>
-          </div>
 
-          <div className="col-sm-6 justify-content-center medium-gray px-5 pt-5">
-            <div
-              className="p-5 align-content-center rounded jumbotron h-100 w-100 max"
-            >
-              <h1
-                className="display-1 manrope cycle-text"
-              >
-                Hi, I'm <span className="auto-input"></span>
-              </h1>
+            <div className="col-sm-6 justify-content-center px-5 pt-5">
+              <div className="p-5 align-content-center rounded jumbotron h-100 w-100">
+                <h1 className="display-1 manrope cycle-text">
+                  Hi, I'm a software engineer!
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* <section class="curvedBottom"></section>
+        <section className="curved-bottom mb-5"></section>
+        <div className="bottom-negative-space"></div>
 
-                <div class="container-my-5 py-5" style="background-color: #fcfcfc;">
-                    <div class="row justify-content-center" style="background-color: #fcfcfc;">
-                        <hr class="dashed" style="border:none;border-radius: 2px; background-color:  #d6d6d6; height:4px;"/>
-                    </div>  
+        <CardText
+          align="left"
+          title="About Me"
+          text="I'm a second-year software engineering student at the
+                University of Ottawa, passionate about software
+                engineering, mathematics, and data science. I've created
+                this website to document my journey, including both
+                academic and personal projects. Here, you'll find
+                insights into my coursework and projects, as well as
+                reflections on my learning experiences. Some of the
+                relevant courses I've completed include Introduction to
+                Computing I and II (ITI1120 and ITI1121), Professional
+                Communication and Responsibility (SEG 2900), Digital
+                Systems (ITI1100), Data Structures and Algorithms
+                (CSI2110), and Computer Architecture I (CEG2136). I'm
+                proficient in several programming languages and
+                frameworks, including Java, C++, Python, JavaScript,
+                HTML, CSS, and the Bootstrap framework. I love diving
+                into complex problems and exploring new ideas—so much so
+                that you can often catch me gushing over a new proof
+                technique to my friends. This space is a living record
+                of my growth and exploration in the field, and I'm
+                excited to share my progress with you. :)"
+          image="/assets/images/university.jpg"
+        />
+
+        <div className="bottom-negative-space"></div>
+
+        <CardText
+          align="Right"
+          title="How I work"
+          text="I'm a second-year software engineering student at the
+                University of Ottawa, passionate about software
+                engineering, mathematics, and data science. I've created
+                this website to document my journey, including both
+                academic and personal projects. Here, you'll find
+                insights into my coursework and projects, as well as
+                reflections on my learning experiences. Some of the
+                relevant courses I've completed include Introduction to
+                Computing I and II (ITI1120 and ITI1121), Professional
+                Communication and Responsibility (SEG 2900), Digital
+                Systems (ITI1100), Data Structures and Algorithms
+                (CSI2110), and Computer Architecture I (CEG2136). I'm
+                proficient in several programming languages and
+                frameworks, including Java, C++, Python, JavaScript,
+                HTML, CSS, and the Bootstrap framework. I love diving
+                into complex problems and exploring new ideas—so much so
+                that you can often catch me gushing over a new proof
+                technique to my friends. This space is a living record
+                of my growth and exploration in the field, and I'm
+                excited to share my progress with you. :)"
+          image="/assets/images/university.jpg"
+        />
+
+        {/* <div class="row-mx-5 justify-content-center">
+          <div class="col-sm-12 px-5">
+            <div class="card w-100 medium-gray">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div
+                    class="card"
+                    //style={"background-color: #fcfcfc; height: 100%"}
+                  >
+                    <h1
+                      class="card-title text-center pt-3 manrope"
+                      //style="color: #7c7c7c;"
+                    >
+                      About Me
+                    </h1>
+                    <div class="card-body align-items-center justify-content-center d-flex">
+                      <p
+                        class="card-text manrope" //style="color: #7c7c7c;"
+                      >
+                        I'm a second-year software engineering student at the
+                        University of Ottawa, passionate about software
+                        engineering, mathematics, and data science. I've created
+                        this website to document my journey, including both
+                        academic and personal projects. Here, you'll find
+                        insights into my coursework and projects, as well as
+                        reflections on my learning experiences. Some of the
+                        relevant courses I've completed include Introduction to
+                        Computing I and II (ITI1120 and ITI1121), Professional
+                        Communication and Responsibility (SEG 2900), Digital
+                        Systems (ITI1100), Data Structures and Algorithms
+                        (CSI2110), and Computer Architecture I (CEG2136). I'm
+                        proficient in several programming languages and
+                        frameworks, including Java, C++, Python, JavaScript,
+                        HTML, CSS, and the Bootstrap framework. I love diving
+                        into complex problems and exploring new ideas—so much so
+                        that you can often catch me gushing over a new proof
+                        technique to my friends. This space is a living record
+                        of my growth and exploration in the field, and I'm
+                        excited to share my progress with you. :)
+                      </p>
+                    </div>
+                  </div>
                 </div>
-
-
-                <div id="about" style="caret-color: transparent; background-color: #fcfcfc;" class="container-my-5 py-5 justify-content-center">
-                    <div class="row-mx-5 justify-content-center">
-                        <div class="col-sm-12 px-5">
-                            <div class="card w-100 medium-gray">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <div class="card" style="background-color: #fcfcfc; height: 100%;">
-                                            <h1 class="card-title text-center pt-3 manrope" style="color: #7c7c7c;">About Me</h1>
-                                            <div class="card-body align-items-center justify-content-center d-flex">
-                                                <p class="card-text manrope" style="color: #7c7c7c;">
-                                                    I'm a second-year software engineering student at the University of Ottawa, 
-                                                    passionate about software engineering, mathematics, and data science. 
-                                                    I've created this website to document my journey, including both academic and personal projects. 
-                                                    Here, you'll find insights into my coursework and projects, as well as reflections on my 
-                                                    learning experiences. Some of the relevant courses I've completed include Introduction to 
-                                                    Computing I and II (ITI1120 and ITI1121), Professional Communication and Responsibility 
-                                                    (SEG 2900), Digital Systems (ITI1100), Data Structures and Algorithms (CSI2110), 
-                                                    and Computer Architecture I (CEG2136).  I'm proficient in several programming languages and frameworks, 
-                                                    including Java, C++, Python, JavaScript, HTML, CSS, and the Bootstrap framework. I love diving into complex 
-                                                    problems and exploring new ideas—so much so that you can often catch me gushing over a 
-                                                    new proof technique to my friends. This space is a living record of my growth and 
-                                                    exploration in the field, and I'm excited to share my progress with you.
-                                                    :)
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 align-content-center justify-content-center">
-                                        <img class="img-fluid p-3" style="border-radius: 50%; border-color: black;" src="Images/univeristy.jpg"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
+                <div class="col-sm-4 align-content-center justify-content-center">
+                  <img
+                    class="img-fluid p-3"
+                    //style="border-radius: 50%; border-color: black;"
+                    src="/assets/images/univeristy.jpg"
+                  />
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+        {/* <div
+        id="about"
+        class="container-my-5 py-5 justify-content-center light-background"
+      >
+        <div class="row-mx-5 justify-content-center">
+          <div class="col-sm-12 px-5">
+            <div class="card w-100 medium-gray">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div
+                    class="card"
+                    //style={"background-color: #fcfcfc; height: 100%"}
+                  >
+                    <h1
+                      class="card-title text-center pt-3 manrope"
+                      //style="color: #7c7c7c;"
+                    >
+                      About Me
+                    </h1>
+                    <div class="card-body align-items-center justify-content-center d-flex">
+                      <p
+                        class="card-text manrope" //style="color: #7c7c7c;"
+                      >
+                        I'm a second-year software engineering student at the
+                        University of Ottawa, passionate about software
+                        engineering, mathematics, and data science. I've created
+                        this website to document my journey, including both
+                        academic and personal projects. Here, you'll find
+                        insights into my coursework and projects, as well as
+                        reflections on my learning experiences. Some of the
+                        relevant courses I've completed include Introduction to
+                        Computing I and II (ITI1120 and ITI1121), Professional
+                        Communication and Responsibility (SEG 2900), Digital
+                        Systems (ITI1100), Data Structures and Algorithms
+                        (CSI2110), and Computer Architecture I (CEG2136). I'm
+                        proficient in several programming languages and
+                        frameworks, including Java, C++, Python, JavaScript,
+                        HTML, CSS, and the Bootstrap framework. I love diving
+                        into complex problems and exploring new ideas—so much so
+                        that you can often catch me gushing over a new proof
+                        technique to my friends. This space is a living record
+                        of my growth and exploration in the field, and I'm
+                        excited to share my progress with you. :)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 align-content-center justify-content-center">
+                  <img
+                    class="img-fluid p-3"
+                    //style="border-radius: 50%; border-color: black;"
+                    src="/assets/images/univeristy.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+        {/*
+            
+
+
+               
                 
             
             <div class="roundedGridWrapper my-5 mx-3">
@@ -220,6 +353,7 @@ function Home() {
                     </div>
                 </div>
                  */}
+      </div>
     </>
   );
 }
