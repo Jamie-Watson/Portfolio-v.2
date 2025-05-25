@@ -2,42 +2,43 @@ import "../assets/css/main.css";
 import Navbar from "../components/Navbar";
 import CardText from "../components/CardText";
 import ProjectCarousel from "../components/ProjectCarousel";
+import Contact from "../components/Contact";
 function Home() {
   const projects = [
     {
       id: 1,
       title: "Data Clustering using LiDAR",
-      image: "/assets/images/snoopy-computer.jpg",
+      image: "/assets/images/Lidar.png",
       tags: ["Java Based", "School Project"],
-      link: "projects/lidarCluster.html",
+      link: "https://jamie-watson.github.io/projects/lidarCluster.html",
     },
     {
       id: 2,
       title: "Parking Lot Simulator",
-      image: "/assets/images/university.jpg",
+      image: "/assets/images/parkingLot.jpg",
       tags: ["Java Based", "School Project"],
-      link: "projects/parkingSim.html",
+      link: "https://jamie-watson.github.io/projects/parkingSim.html",
     },
     {
       id: 3,
       title: "Old Maid Card Game",
-      image: "/assets/images/snoopy-computer.jpg",
+      image: "/assets/images/cards.jpg",
       tags: ["Python Based", "School Project", "Game"],
-      link: "projects/oldMaid.html",
+      link: "https://jamie-watson.github.io/projects/oldMaid.html",
     },
     {
       id: 4,
       title: "Nonogram Generator Python Class",
-      image: "/assets/images/university.jpg",
+      image: "/assets/images/nonogramDemo.png",
       tags: ["Python Based", "Personal Project"],
-      link: "projects/nonogram.html",
+      link: "https://jamie-watson.github.io/projects/nonogram.html",
     },
     {
       id: 5,
       title: "Writing Aid: Penpal",
-      image: "/assets/images/snoopy-computer.jpg",
+      image: "/assets/images/Pen-Pal_Logo.png",
       tags: ["Java Based", "Personal Project"],
-      link: "projects/penPal.html",
+      link: "https://jamie-watson.github.io/projects/penPal.html",
     },
   ];
 
@@ -48,7 +49,7 @@ function Home() {
 
         <div
           id="home"
-          className="container-my-5 py-5 no-caret light-background"
+          className="container-my-5 py-5 px-5 no-caret light-background"
         >
           <div className="row py-5 justify-content-center">
             <div className="col-sm-6 justify-content-center pt-5">
@@ -61,12 +62,10 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-sm-6 justify-content-center px-5 pt-5">
-              <div className="p-5 align-content-center rounded jumbotron h-100 w-100">
-                <h1 className="display-1 manrope cycle-text">
-                  Hi, I'm a software engineer!
-                </h1>
-              </div>
+            <div className="col-sm-6 justify-content-center px-5 pt-5 grid-background rounded-container align-content-center">
+              <h1 className="h1 h-sm display-1 display-md-3 text-wrap text-break text-center">
+                Hi, I'm a software engineer!
+              </h1>
             </div>
           </div>
         </div>
@@ -77,26 +76,7 @@ function Home() {
         <CardText
           align="left"
           title="About Me"
-          text="I'm a second-year software engineering student at the
-                University of Ottawa, passionate about software
-                engineering, mathematics, and data science. I've created
-                this website to document my journey, including both
-                academic and personal projects. Here, you'll find
-                insights into my coursework and projects, as well as
-                reflections on my learning experiences. Some of the
-                relevant courses I've completed include Introduction to
-                Computing I and II (ITI1120 and ITI1121), Professional
-                Communication and Responsibility (SEG 2900), Digital
-                Systems (ITI1100), Data Structures and Algorithms
-                (CSI2110), and Computer Architecture I (CEG2136). I'm
-                proficient in several programming languages and
-                frameworks, including Java, C++, Python, JavaScript,
-                HTML, CSS, and the Bootstrap framework. I love diving
-                into complex problems and exploring new ideas—so much so
-                that you can often catch me gushing over a new proof
-                technique to my friends. This space is a living record
-                of my growth and exploration in the field, and I'm
-                excited to share my progress with you. :)"
+          text="I'm a third-year Software Engineering student at the University of Ottawa, with a strong interest in software development, mathematics, and data science. I'm currently serving on the Board of Directors for the Engineering Students Society, where I contribute to student engagement and academic initiatives. This portfolio serves as a space to document my academic journey and ongoing growth as a developer and designer. Some of the courses I've completed include Introduction to Computing I and II (ITI1120, ITI1121), Data Structures and Algorithms (CSI2110), Computer Architecture I (CEG2136), Digital Systems (ITI1100), Operating Systems (CSI3131), and Introduction to Software Engineering (SEG2105, SEG3125). I have experience working with a variety of programming languages and tools, including Java, C++, Python, JavaScript, HTML, CSS, and the Bootstrap framework."
           image="/assets/images/university.jpg"
         />
 
@@ -105,27 +85,8 @@ function Home() {
         <CardText
           align="Right"
           title="How I work"
-          text="I'm a second-year software engineering student at the
-                University of Ottawa, passionate about software
-                engineering, mathematics, and data science. I've created
-                this website to document my journey, including both
-                academic and personal projects. Here, you'll find
-                insights into my coursework and projects, as well as
-                reflections on my learning experiences. Some of the
-                relevant courses I've completed include Introduction to
-                Computing I and II (ITI1120 and ITI1121), Professional
-                Communication and Responsibility (SEG 2900), Digital
-                Systems (ITI1100), Data Structures and Algorithms
-                (CSI2110), and Computer Architecture I (CEG2136). I'm
-                proficient in several programming languages and
-                frameworks, including Java, C++, Python, JavaScript,
-                HTML, CSS, and the Bootstrap framework. I love diving
-                into complex problems and exploring new ideas—so much so
-                that you can often catch me gushing over a new proof
-                technique to my friends. This space is a living record
-                of my growth and exploration in the field, and I'm
-                excited to share my progress with you. :)"
-          image="/assets/images/university.jpg"
+          text="While I'm still developing my experience in UI/UX design, I'm currently enrolled in a UI design course where I'm learning the core principles of user-centered design, usability heuristics, and interface prototyping. My approach is informed by previous software engineering courses, co-op work terms, and my understanding of system design fundamentals. I reference usability principles from the Nielsen Norman Group and aim to apply them thoughtfully in each project. I design iteratively, blending aspects of spiral and agile methodologies to balance feedback, refinement, and fast prototyping. This approach allows me to remain flexible while grounding my design decisions in user needs and technical constraints. My goal is to create accessable designs which are created for productivity."
+          image="/assets/images/neilson.png"
         />
 
         <div className="bottom-negative-space"></div>
@@ -137,85 +98,10 @@ function Home() {
               </div>
             </div>
           </div>
-          <ProjectCarousel projects={projects}></ProjectCarousel>
+          <ProjectCarousel projects={projects} />
         </div>
 
-        {/* <div
-          id="contact"
-          className="container-mt-5 pb-5 medium-gray justify-content-center"
-          style={{ caretColor: "transparent" }}
-        >
-          <div className="row-mt-5">
-            <div className="col-sm-12 justify-content-center">
-              <div className="py-5 text-dark text-center manrope">
-                <h1 className="display-5">Contact me :)</h1>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-sm-4">
-              <div className="text-secondary text-center manrope">
-                <p className="mb-5">
-                  I'd love to connect! Feel free to reach out if you have any
-                  questions or just want to chat about coding and math.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <section className="mb-4 text-center">
-              <a
-                className="btn btn-outline-dark btn-floating m-1 justify-content-around"
-                href="https://www.linkedin.com/in/jamie-w-268486298/"
-                role="button"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-linkedin"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                </svg>
-              </a>
-
-              <a
-                href="https://github.com/Jamie-Watson"
-                className="btn btn-outline-dark btn-floating m-1"
-                role="button"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-github"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-              </a>
-
-              <button
-                className="btn btn-outline-dark btn-floating m-1"
-                role="button"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-envelope"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                </svg>
-              </button>
-            </section>
-          </div>
-        </div> */}
+        <Contact></Contact>
       </div>
     </>
   );

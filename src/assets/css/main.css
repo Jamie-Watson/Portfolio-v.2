@@ -5,6 +5,15 @@
   --black: #1A1A1A;
 }
 
+@font-face {
+  font-family: "primary-font";
+  src: url("/public/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 .dark-background {
   background-color: var(--d-background) !important;
 }
@@ -13,10 +22,22 @@
   background-color: var(--l-background) !important;
 }
 
+.black-background{
+  background-color: var(--black) !important;
+}
+
+h1{
+  font-family: "primary-font", sans-serif !important;
+}
+
+p{
+  font-family: "primary-font", sans-serif !important;
+}
 .white-text {
   color: #F5F5F5 !important;
   font-weight: normal;
   text-decoration: none;
+  font-family: "primary-font", sans-serif !important;
 }
 
 .navbar-text:hover {
@@ -30,7 +51,7 @@
 }
 
 .about-me-text{
-  color: var(--black) !important;
+  color: var(--black);
   font-size: 25px;
 }
 
@@ -51,9 +72,9 @@
 
 .grid-background {
   background-image: url("../../../public/assets/images/grid.jpg");
-  background-repeat: repeat;       /* Repeats the image */
-  background-size: auto;           /* Prevents scaling */
-  background-position: top left;   /* Optional: start repeating from top-left */
+  background-repeat: repeat;       
+  background-size: auto;          
+  background-position: top left;   
 }
 
 .bottom-negative-space{

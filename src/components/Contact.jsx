@@ -1,23 +1,28 @@
 import "../assets/css/main.css";
 
 function Contact() {
+  const email = "jwats018@uottawa.ca";
+  const copyEmail = () => {
+    navigator.clipboard.writeText(email);
+    window.alert("Email copied");
+  };
+
   return (
     <>
       <div
         id="contact"
-        className="container-mt-5 pb-5 medium-gray justify-content-center"
-        style={{ caretColor: "transparent" }}
+        className="container-mt-5 pb-5 black-background justify-content-center no-caret"
       >
         <div className="row-mt-5">
           <div className="col-sm-12 justify-content-center">
-            <div className="py-5 text-dark text-center manrope">
-              <h1 className="display-5">Contact me :)</h1>
+            <div className="py-5 white-text text-center">
+              <h1 className="display-4">Contact me :)</h1>
             </div>
           </div>
         </div>
         <div className="row justify-content-center">
           <div className="col-sm-4">
-            <div className="text-secondary text-center manrope">
+            <div className="about-me-text white-text text-center">
               <p className="mb-5">
                 I'd love to connect! Feel free to reach out if you have any
                 questions or just want to chat about coding and math.
@@ -28,14 +33,14 @@ function Contact() {
         <div className="row justify-content-center">
           <section className="mb-4 text-center">
             <a
-              className="btn btn-outline-dark btn-floating m-1 justify-content-around"
+              className="btn btn-outline-light btn-floating mx-3 justify-content-around"
               href="https://www.linkedin.com/in/jamie-w-268486298/"
               role="button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="64"
+                height="64"
                 fill="currentColor"
                 className="bi bi-linkedin"
                 viewBox="0 0 16 16"
@@ -46,13 +51,13 @@ function Contact() {
 
             <a
               href="https://github.com/Jamie-Watson"
-              className="btn btn-outline-dark btn-floating m-1"
+              className="btn btn-outline-light btn-floating m-1 mx-3"
               role="button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="64"
+                height="64"
                 fill="currentColor"
                 className="bi bi-github"
                 viewBox="0 0 16 16"
@@ -62,13 +67,14 @@ function Contact() {
             </a>
 
             <button
-              className="btn btn-outline-dark btn-floating m-1"
+              className="btn btn-outline-light btn-floating m-1 mx-3"
               role="button"
+              onClick={copyEmail}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="64"
+                height="64"
                 fill="currentColor"
                 className="bi bi-envelope"
                 viewBox="0 0 16 16"

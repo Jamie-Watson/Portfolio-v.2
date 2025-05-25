@@ -33,13 +33,18 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link navbar-text white-text"
-                href="/Resume/Resume_2024.pdf"
+                href="/public/assets/Resume_2024.pdf"
               >
                 Resume
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link navbar-text white-text" href="/#">
+              <a
+                className="nav-link navbar-text white-text"
+                onClick={(e) => {
+                  window.alert("To be added!");
+                }}
+              >
                 Projects
               </a>
             </li>
