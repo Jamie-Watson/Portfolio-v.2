@@ -47,9 +47,9 @@ function Home() {
             <div className="col-lg-6 justify-content-center pt-5 mb-3">
               <div className="text-center">
                 <img
-                  src="/assets/images/snoopy-computer.jpg"
-                  className="img-fluid rounded-circle"
-                  alt="Snoopy at computer"
+                  src="/assets/images/profile.jpeg"
+                  className="img-fluid rounded-circle profile-pic"
+                  alt=""
                 />
               </div>
             </div>

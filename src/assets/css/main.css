@@ -75,6 +75,12 @@ p{
   min-height: 500px;
 }
 
+.profile-pic{
+  max-height: 40vh !important;
+  border: var(--white) 10px solid !important;
+  box-sizing: border-box !important;
+}
+
 .grid-background {
   background-image: url("../../../public/assets/images/grid.jpg");
   background-repeat: repeat;       
