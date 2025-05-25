@@ -3,13 +3,13 @@ function Navbar() {
     <header>
       <nav className="navbar navbar-expand-lg fixed-top dark-background justify-content-center text-center no-caret">
         <a
-          className="navbar-brand justify-content-center text-center mx-5 navbar-text"
+          className="navbar-brand justify-content-center text-center mx-5 navbar-text white-text"
           href="/#home"
         >
           Jamie Watson
         </a>
         <button
-          className="navbar-toggler justify-content-center text-center navbar-text"
+          className="navbar-toggler justify-content-center text-center navbar-text white-text"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -26,25 +26,25 @@ function Navbar() {
         >
           <ul className="navbar-nav mr-auto mx-5">
             <li className="nav-item">
-              <a className="nav-link navbar-text" href="/#about">
+              <a className="nav-link navbar-text white-text" href="/#about">
                 About
               </a>
             </li>
             <li className="nav-item">
               <a
-                className="nav-link navbar-text"
+                className="nav-link navbar-text white-text"
                 href="/Resume/Resume_2024.pdf"
               >
                 Resume
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link navbar-text" href="/#">
+              <a className="nav-link navbar-text white-text" href="/#">
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link navbar-text" href="/#contact">
+              <a className="nav-link navbar-text white-text" href="/#contact">
                 Contact
               </a>
             </li>

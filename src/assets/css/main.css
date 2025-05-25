@@ -5,19 +5,6 @@
   --black: #1A1A1A;
 }
 
-
-@media screen and (min-width: 576px) {
-  .carousel-inner {
-    display: flex;
-  }
-
-  .carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100% / 3);
-  }
-}
-
 .dark-background {
   background-color: var(--d-background) !important;
 }
@@ -26,7 +13,7 @@
   background-color: var(--l-background) !important;
 }
 
-.navbar-text {
+.white-text {
   color: #F5F5F5 !important;
   font-weight: normal;
   text-decoration: none;
@@ -39,7 +26,7 @@
 }
 
 .rounded-container{
-  border-radius: 16px !important;
+  border-radius: 32px !important;
 }
 
 .about-me-text{
@@ -73,48 +60,52 @@
   margin-bottom: 6rem;
 }
 
-.carousel-inner {
-  padding: 1em;
+.left-arrow{
+  color: #1A1A1A;
+  background-color: #3B8A5F!important;
+  border-radius: 100%;
+  max-height: 3rem;
+  max-width: 3rem;
+  left: 2rem!important;
+  z-index: 5;
+}
+
+.right-arrow{
+  color: #1A1A1A;
+  background-color: #3B8A5F!important;
+  border-radius: 100%;
+  max-height: 3rem;
+  max-width: 3rem;
+  right: 2rem!important;
+  z-index: 5;
+}
+
+.project-card{
+  max-width: 500px;
 }
 
 .curved-bottom {
   position: relative;
-  background: var(--l-background);
   height: 10vh;
   border-bottom-left-radius: 20% 90%;
   border-bottom-right-radius: 20% 90%;
 }
 
-.curvedTop {
+.curved-top {
   position: relative;
-  background: #d6d6d6;
-  height: 2%;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
+  height: 10vh;
+  border-top-left-radius: 20% 90%;
+  border-top-right-radius: 20% 90%;
 }
 
-.custom-carousel {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3rem;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+.carousel-rectangles{
+ 
+  width: 80px;
+                  height: 10px;
+                  border-radius: 3px;
+                  border: none;
+                
 }
-
-.roundedGridWrapper {
-  border-top-left-radius: 25% 15%;
-  border-top-right-radius: 25% 15%;
-  border-bottom-left-radius: 25% 15%;
-  border-bottom-right-radius: 25% 15%;
-  overflow: hidden;
-  background-image: url("../images/grid.jpg");
-  background-size: cover;
-  background-position: center;
-  border: solid #d6d6d6;
-}
-
 .max {
   max-height: 500px;
   min-height: 500px;
@@ -123,6 +114,11 @@
 .display-1 {
   max-height: fit-content;
   min-height: fit-content;
+}
+
+.projects-container{
+  border-top-left-radius: 90% 30%;
+  border-top-right-radius: 90% 30%;
 }
 
 @font-face {
@@ -150,5 +146,7 @@
 .no-caret {
   caret-color: transparent;
 }
+
+
 
 
