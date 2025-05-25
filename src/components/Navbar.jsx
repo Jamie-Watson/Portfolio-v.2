@@ -33,7 +33,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link navbar-text white-text"
-                href="/public/assets/Resume_2024.pdf"
+                href="/assets/Resume_2024.pdf"
               >
                 Resume
               </a>
