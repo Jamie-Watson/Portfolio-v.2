@@ -1,5 +1,6 @@
 import "../assets/css/main.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ProjectCarousel({ projects }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -51,9 +52,12 @@ function ProjectCarousel({ projects }) {
                           </li>
                         ))}
                       </ul>
-                      <a href={project.link} className="btn btn-dark mt-2">
+                      <Link
+                        to={`/projects/${project.id}`}
+                        className="btn btn-dark mt-2"
+                      >
                         View Project
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

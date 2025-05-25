@@ -4,41 +4,33 @@ import CardText from "../components/CardText";
 import ProjectCarousel from "../components/ProjectCarousel";
 import Contact from "../components/Contact";
 function Home() {
+  const comingSoon = () => {
+    window.alert("");
+  };
   const projects = [
     {
-      id: 1,
-      title: "Data Clustering using LiDAR",
-      image: "/assets/images/Lidar.png",
-      tags: ["Java Based", "School Project"],
-      link: "https://jamie-watson.github.io/projects/lidarCluster.html",
+      id: "service-site",
+      title: "Service Site",
+      image: "/assets/images/service-site.jpg",
+      tags: ["School Project"],
     },
     {
-      id: 2,
-      title: "Parking Lot Simulator",
-      image: "/assets/images/parkingLot.jpg",
-      tags: ["Java Based", "School Project"],
-      link: "https://jamie-watson.github.io/projects/parkingSim.html",
+      id: "ecommerce-site",
+      title: "E-commerce site",
+      image: "/assets/images/ecommerce-site.jpg",
+      tags: ["School Project"],
     },
     {
-      id: 3,
-      title: "Old Maid Card Game",
-      image: "/assets/images/cards.jpg",
-      tags: ["Python Based", "School Project", "Game"],
-      link: "https://jamie-watson.github.io/projects/oldMaid.html",
+      id: "game",
+      title: "Game",
+      image: "/assets/images/game.jpg",
+      tags: ["School Project", "Game"],
     },
     {
-      id: 4,
-      title: "Nonogram Generator Python Class",
-      image: "/assets/images/nonogramDemo.png",
-      tags: ["Python Based", "Personal Project"],
-      link: "https://jamie-watson.github.io/projects/nonogram.html",
-    },
-    {
-      id: 5,
-      title: "Writing Aid: Penpal",
-      image: "/assets/images/Pen-Pal_Logo.png",
-      tags: ["Java Based", "Personal Project"],
-      link: "https://jamie-watson.github.io/projects/penPal.html",
+      id: "analytics-site",
+      title: "Analytics site",
+      image: "/assets/images/analytics-site.jpg",
+      tags: ["School Project"],
     },
   ];
 
@@ -52,7 +44,7 @@ function Home() {
           className="container-my-5 py-5 px-5 no-caret light-background"
         >
           <div className="row py-5 justify-content-center">
-            <div className="col-sm-6 justify-content-center pt-5">
+            <div className="col-sm-6 justify-content-center pt-5 mb-3">
               <div className="text-center">
                 <img
                   src="/assets/images/snoopy-computer.jpg"
@@ -62,7 +54,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-sm-6 justify-content-center px-5 pt-5 grid-background rounded-container align-content-center">
+            <div className="col-sm-6 justify-content-center px-5 pt-5 grid-background rounded-container align-content-center mb-3">
               <h1 className="h1 h-sm display-1 display-md-3 text-wrap text-break text-center">
                 Hi, I'm a software engineer!
               </h1>
@@ -94,7 +86,7 @@ function Home() {
           <div className="row justify-content-center">
             <div className="col-sm-12 mt-5 justify-content-center">
               <div className="px-5 white-text text-center">
-                <h1 className="display-4">Projects</h1>
+                <h1 className="display-4">Design Projects</h1>
               </div>
             </div>
           </div>
