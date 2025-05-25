@@ -22,7 +22,7 @@ function CardText({ align = "left", text, title, image }) {
               </div>
             </div>
             <div className="col-12 col-lg-4 d-flex mb-3">
-              <div className="card h-100 w-100 p-3 rounded-container">
+              <div className="card p-3 rounded-container">
                 <img
                   className="card-img-top img-fluid object-fit-cover h-100 rounded-container"
                   src={image}

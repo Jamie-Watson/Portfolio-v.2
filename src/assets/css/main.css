@@ -52,7 +52,7 @@ p{
 
 .about-me-text{
   color: var(--black);
-  font-size: 25px;
+  font-size: 24px;
 }
 
 @media (max-width: 480px) {

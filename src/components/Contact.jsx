@@ -16,7 +16,7 @@ function Contact() {
         <div className="row-mt-5">
           <div className="col-sm-12 justify-content-center">
             <div className="py-5 white-text text-center">
-              <h1 className="display-4">Contact me :)</h1>
+              <h1 className="display-4">Contact</h1>
             </div>
           </div>
         </div>
