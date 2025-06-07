@@ -11,8 +11,9 @@ function Home() {
     {
       id: "service-site",
       title: "Service Site",
-      image: "/assets/images/service-site.jpg",
+      image: "/assets/images/watchBattery.jpeg",
       tags: ["School Project"],
+      link: "https://watchrepairapp.netlify.app/",
     },
     {
       id: "ecommerce-site",

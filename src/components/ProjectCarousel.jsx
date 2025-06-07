@@ -52,12 +52,23 @@ function ProjectCarousel({ projects }) {
                           </li>
                         ))}
                       </ul>
-                      <Link
-                        to={`/projects/${project.id}`}
-                        className="btn btn-dark mt-2"
-                      >
-                        View Project
-                      </Link>
+                      {project.link ? (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-dark mt-2"
+                        >
+                          View Project
+                        </a>
+                      ) : (
+                        <Link
+                          to={`/projects/${project.id}`}
+                          className="btn btn-dark mt-2"
+                        >
+                          View Project
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>
