@@ -16,16 +16,17 @@ function Home() {
       link: "https://watchrepairapp.netlify.app/",
     },
     {
+      id: "game",
+      title: "Nonograms Game",
+      image: "/assets/images/nonograms.png",
+      tags: ["School Project", "Game"],
+      link: "https://gramjamsnonograms.netlify.app/",
+    },
+      {
       id: "ecommerce-site",
       title: "E-commerce site",
       image: "/assets/images/ecommerce-site.jpg",
       tags: ["School Project"],
-    },
-    {
-      id: "game",
-      title: "Game",
-      image: "/assets/images/game.jpg",
-      tags: ["School Project", "Game"],
     },
     {
       id: "analytics-site",
