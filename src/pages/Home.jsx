@@ -24,9 +24,10 @@ function Home() {
     },
       {
       id: "ecommerce-site",
-      title: "E-commerce site",
+      title: "E-commerce site (Furniture Store)",
       image: "/assets/images/ecommerce-site.jpg",
       tags: ["School Project"],
+      link: "https://chairishfurniture.netlify.app/",
     },
     {
       id: "analytics-site",
